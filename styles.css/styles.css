@@ -1,0 +1,84 @@
+#video {
+  display: flex;
+  justify-content: center;
+}
+
+#Pilares {
+  display: flex;
+  justify-content: space-around;
+}
+
+#votacion {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  justify-content:baseline;
+  align-items: center;
+  
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quien {
+  display: flex;
+  align-items: center;
+}
+
+#quien {
+  background-image: url("../img/WhatsApp\ Image\ 2023-08-10\ at\ 6.55.44\ PM.jpeg");
+  padding: 10%;
+  background-size: cover;
+  background-position: top center;
+  /* background-attachment: fixed; */
+  position: relative;
+  z-index: 1;
+}
+
+#quien::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fcc008;
+  opacity: 0.8;
+  z-index: -1;
+}
+nav {
+  background-color:#0D421F;
+  text-decoration-color: #fcc008;
+}
+
+.nav {
+    color: #fcc008;
+    
+}
+
+.btn {
+    background-color:#fcc008;
+}
+
+.btn:hover {
+    background-color: #0D421F;
+    color: white;
+}
+
+#home-tab-pane, #profile-tab-pane, #contact-tab-pane {
+    text-align: center;
+}
+
+#video {
+    background-color: #0D421F;
+}
