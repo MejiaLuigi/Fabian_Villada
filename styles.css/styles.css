@@ -57,7 +57,7 @@ img {
   z-index: -1;
 }
 nav {
-  background-color:#0D421F;
+  /* background-color:#0D421F; */
   text-decoration-color: #fcc008;
 }
 
@@ -81,4 +81,10 @@ nav {
 
 #video {
     background-color: #0D421F;
+}
+
+.bi {
+  height: 18px;
+  width: 18px;
+  color:#dc3545;
 }
