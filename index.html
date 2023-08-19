@@ -1,256 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/FAVICON.png">
-    <title>Fabian Villada - Acción Audaz</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <!--nav-->
-    <nav class="navbar navbar-expand-lg  navbar-dark align-items-center fixed-top">
-      <div class="container">
-          <a class="navbar-brand" href="./index.html">
-            <img src="./img/STICKER.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top">
-          </a>
-        
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                  <li class="nav-item"><a class="nav-link active " href="./FernandoEspinosa.html">Fernando Espinosa</a></li>
-                  <li class="nav-item"><a class="nav-link active" href="./GobernacionyAsamblea.html">Gobernacion y Asamblea</a></li>
-                  <li class="nav-item"><a class="nav-link active" href="#contactenos">Contactanos</a></li>
-              </ul>
-          </div>
-      </div>
-    </nav>
-    <!--fin nav-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/FAVICON.png">
+  <title>Fabian Villada - Acción Audaz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-    <!--carrusel-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+<body>
+  <!--nav-->
+  <nav class="navbar navbar-expand-lg  navbar-dark align-items-center fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/STICKER.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item"><a class="nav-link active " href="./FernandoEspinosa.html">Fernando Espinosa</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./GobernacionyAsamblea.html">Gobernacion y Asamblea</a>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="#contactenos">Contactanos</a></li>
+        </ul>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="1000">
-          <img src="./img/cr1.png" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="./img/cr2.png" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="./img/cr3.png" class="d-block w-100" alt="..." />
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <!--fin carrusel-->
+  </nav>
+  <!--fin nav-->
 
-    <!--quien soy-->
-    
-    <div class="container-fluid " id="quien">
-      <div class="row">
+  <!--carrusel-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1000">
+        <img src="./img/cr1.png" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./img/cr2.png" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="./img/cr3.png" class="d-block w-100" alt="..." />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--fin carrusel-->
+
+  <!--quien soy-->
+
+  <div class="container-fluid " id="quien">
+    <div class="row">
       <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-        <div class="row text-center"><h2>Soy Fabian Villa</h2></div>
-        <div class="row "><p>Orgullosamente Yarumaleño, ambientalista y defensor de la igualdad como un derecho de todos y
-          todas, respetuoso y empático por las causas sociales y apasionado por hacer del mundo un lugar
-          más justo y equitativo. Me he formado académicamente en diferentes áreas del conocimiento y
-          tengo amplia experiencia laboral, demostrando siempre mi capacidad de liderazgo y de encontrar
-          soluciones asertivas a los diferentes desafíos que se me han presentado. Me gusta escuchar a la
-          gente porque siempre estoy aprendiendo de ella, y creo firmemente que todos tenemos un
-          propósito de vida y como dice Eduardo Galeano “Mucha gente pequeña, en lugares pequeños,
-          haciendo cosas pequeñas, puede cambiar el mundo.”
-        </p></div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"><img src="./img/f2.png" class="img-fluid" alt="..." /></div>
-    </div>
-    </div>
-    <!--quien soy-->
-
-    <!--video-->
-    <div id="video">
-      <iframe
-        width="700"
-        height="400"
-        src="https://www.youtube.com/embed/aXdtpAFrvI4?start=18"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <!--fin video-->
-
-    <!--boton votacion-->
-    <div class="container votacion">
-      <div class="row">
-        <h2>Consulta Tú Lugar De Votación</h2>
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-      aria-controls="offcanvasWithBothOptions">Consulta </button>
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-      aria-labelledby="offcanvasWithBothOptionsLabel">
-      <div class="offcanvas-body">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">CONSULTA TU LUGAR DE VOTACION</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="row text-center">
+          <h2>Soy Fabian Villa</h2>
         </div>
-        <iframe src="https://wsp.registraduria.gov.co/censo/consultar/" frameborder="0" width="100%" height="100%"></iframe>
+        <div class="row ">
+          <p>Orgullosamente Yarumaleño, ambientalista y defensor de la igualdad como un derecho de todos y
+            todas, respetuoso y empático por las causas sociales y apasionado por hacer del mundo un lugar
+            más justo y equitativo. Me he formado académicamente en diferentes áreas del conocimiento y
+            tengo amplia experiencia laboral, demostrando siempre mi capacidad de liderazgo y de encontrar
+            soluciones asertivas a los diferentes desafíos que se me han presentado. Me gusta escuchar a la
+            gente porque siempre estoy aprendiendo de ella, y creo firmemente que todos tenemos un
+            propósito de vida y como dice Eduardo Galeano “Mucha gente pequeña, en lugares pequeños,
+            haciendo cosas pequeñas, puede cambiar el mundo.”
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"><img src="./img/f2.png" class="img-fluid"
+          alt="..." /></div>
+    </div>
+  </div>
+  <!--quien soy-->
+
+  <!--video-->
+  <div id="video">
+    <iframe 
+     width="560" 
+     height="315" 
+     src="https://www.youtube.com/embed/6uBHKojcM-0?si=Ib9RBm4wJ0PPQKCl&autoplay=1"
+     title="YouTube video player" 
+     frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+     allowfullscreen>
+    </iframe>
+
+  </div>
+  <!--fin video-->
+
+  <!--boton votacion-->
+  <div class="container votacion">
+    <div class="row">
+      <h2>Consulta Tú Lugar De Votación</h2>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Consulta </button>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-body">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">CONSULTA TU LUGAR DE VOTACION</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <iframe src="https://wsp.registraduria.gov.co/censo/consultar/" frameborder="0" width="100%"
+            height="100%"></iframe>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-    <!--fin boton votacion-->
+  <!--fin boton votacion-->
 
-    <!-- estudios y experiencia-->
-    <div class="container-fluid estudios">
-      <div class="row">
-        <div class="col-6">
+  <!-- estudios y experiencia-->
+  <div class="container-fluid estudios">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
         <div class="row-md-12"><i class="bi bi-person-vcard-fill custom-icon "></i></div>
-        <div class="row-md-12"><h2>Mi Trayectoria</h2></div>
-           <div class="col-12">
+        <div class="row-md-12">
+          <h2>Mi Trayectoria</h2>
+        </div>
+        <div class="col-12">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active fw-bold"
-                id="home-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#home-tab-pane"
-                type="button"
-                role="tab"
-                aria-controls="home-tab-pane"
-                aria-selected="true"
-              >
+              <button class="nav-link active fw-bold" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
                 Estudios
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button
-                class="nav-link  fw-bold"
-                id="profile-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#profile-tab-pane"
-                type="button"
-                role="tab"
-                aria-controls="profile-tab-pane"
-                aria-selected="false"
-              >
+              <button class="nav-link  fw-bold" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
                 Experiencia Laboral
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button
-                class="nav-link fw-bold"
-                id="contact-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#contact-tab-pane"
-                type="button"
-                role="tab"
-                aria-controls="contact-tab-pane"
-                aria-selected="false"
-              >
+              <button class="nav-link fw-bold" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
                 Otros
               </button>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="home-tab-pane"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-              tabindex="0"
-              
-            >
-            •  Tecnólogo en Archivistica - Universidad de Antioquia <br>
-            •  Administrador Finaciero – CEIPA <br>
-            •  Especialista en Gerencia de Riesgos – Politécnico Grancolombiano <br>
-            •  Estudié Inglés en Inglaterra -  St. Giles International <br>
-            •  Estudiante de Derecho – Universidad Visión de las Américas <br>
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+              tabindex="0">
+              • Tecnólogo en Archivistica - Universidad de Antioquia <br>
+              • Administrador Finaciero – CEIPA <br>
+              • Especialista en Gerencia de Riesgos – Politécnico Grancolombiano <br>
+              • Estudié Inglés en Inglaterra - St. Giles International <br>
+              • Estudiante de Derecho – Universidad Visión de las Américas <br>
             </div>
-            <div
-              class="tab-pane fade"
-              id="profile-tab-pane"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
-              tabindex="0"
-            >
-            •  Auxiliar CAD – Cooperativa de Yarumal <br>
-            •  Analista de Crédito – Cooperativa de Yarumal <br>
-            •  Instructor áreas Administrativas y Financieras – SENA <br>
-            •  Tesorero para los Fondos Educativos – Gobernación de Antioquia <br>
-            •  Profesional en Contratación – Alcaldía de Valdivia <br>
-            •  Gerente Administrativo – Mattelsa <br>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              • Auxiliar CAD – Cooperativa de Yarumal <br>
+              • Analista de Crédito – Cooperativa de Yarumal <br>
+              • Instructor áreas Administrativas y Financieras – SENA <br>
+              • Tesorero para los Fondos Educativos – Gobernación de Antioquia <br>
+              • Profesional en Contratación – Alcaldía de Valdivia <br>
+              • Gerente Administrativo – Mattelsa <br>
             </div>
-            <div
-              class="tab-pane fade  "
-              id="contact-tab-pane"
-              role="tabpanel"
-              aria-labelledby="contact-tab"
-              tabindex="0"
-            >
-            •  Soy Directivo del Consejo de Administración – Cooperativa de Yarumal <br>
-            •  Cordinador del Comité de Riesgos -  Cooperativa de Yarumal <br>
-            •  Cordinador del Comité de Educación – Cooperativa de Yarumal <br>
+            <div class="tab-pane fade  " id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+              tabindex="0">
+              • Soy Directivo del Consejo de Administración – Cooperativa de Yarumal <br>
+              • Cordinador del Comité de Riesgos - Cooperativa de Yarumal <br>
+              • Cordinador del Comité de Educación – Cooperativa de Yarumal <br>
             </div>
           </div>
         </div>
       </div>
-        <div class="col"><img src="./img/f1.png" alt=""></div>
-          
-        </div></h3>
-      </div>
-    </div>
-    <!--fin estudios-->
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"><img src="./img/f1.png" alt=""></div>
 
-    <!--Mis pilares-->
-    <div class="container pilares">
+    </div>
+    </h3>
+  </div>
+  </div>
+  <!--fin estudios-->
+
+  <!--Mis pilares-->
+  <div class="container pilares">
     <h2 class="text-center">Mis Pilares</h2>
-    </div>
-    <!--fin Mis pilares-->
+  </div>
+  <!--fin Mis pilares-->
 
-    <!--pilares-->
-    <div class="container-fluid Pilares">
-      <div class="row">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 card text-bg-warning" >
+  <!--pilares-->
+  <div class="container-fluid Pilares">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 card text-bg-warning">
         <img src="./img/SALUD MENTAL.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h3 class="card-title">SALUD MENTAL</h3>
           <p class="card-text">
             Considero que la salud mental es un pilar esencial en nuestro quehacer diario, pues de esta
-depende no solo el bienestar mental si no también el físico y la capacidad para afrontar cada
-momento de la vida. Mi visión es que en nuestro municipio se pueda promover la salud mental
-como elemento integral del derecho a la salud de los Yarumaleños y Yarumaleñas.
+            depende no solo el bienestar mental si no también el físico y la capacidad para afrontar cada
+            momento de la vida. Mi visión es que en nuestro municipio se pueda promover la salud mental
+            como elemento integral del derecho a la salud de los Yarumaleños y Yarumaleñas.
           </p>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-bg-success" >
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-bg-success">
         <img src="./img/EDUCACIαN.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h3 class="card-title">EDUCACIÓN</h3>
@@ -263,8 +230,8 @@ como elemento integral del derecho a la salud de los Yarumaleños y Yarumaleñas
           </p>
         </div>
       </div>
-      <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 card text-bg-warning" >
-        <img src="./img/imageedit_2_8051216400.png" class="card-img-top" alt="..." width="10%"  />
+      <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 card text-bg-warning">
+        <img src="./img/imageedit_2_8051216400.png" class="card-img-top" alt="..." width="10%" />
         <div class="card-body">
           <h3 class="card-title">EMPRENDIMIENTO - TURISMO</h3>
           <p class="card-text">
@@ -276,132 +243,98 @@ como elemento integral del derecho a la salud de los Yarumaleños y Yarumaleñas
         </div>
       </div>
     </div>
-    </div>
-    <!--fin Pilares-->
+  </div>
+  <!--fin Pilares-->
 
-    <!--Contactenos-->
-    <div class="row justify-content-center" id="contactenos">
-      <div class="col-12 col-md-5 align-self-center">
-        <form>
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">
-                  <i class="bi bi-person-circle"></i>
-                </span>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Nombre"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-envelope-paper-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75l-1.5.75ZM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765ZM16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4v.313Zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516L8 10.072Zm-8 3.3 5.693-3.162L0 6.873v6.5Z"
-                    />
-                  </svg>
-                </span>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Correo"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">
-                  <i class="bi bi-telephone-fill"></i>
-                </span>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="telefono"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">
-                  <i class="bi bi-calendar-date-fill"></i>
-                </span>
-                <input
-                  type="date"
-                  class="form-control"
-                  placeholder="fecha"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">
-                  <i class="bi bi-clock-fill"></i>
-                </span>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>selecione hora</option>
-                  <option value="1">1pm - 2pm</option>
-                  <option value="2">3pm - 4pm</option>
-                  <option value="3">5pm - 6pm</option>
-                </select>
-              </div>
-            </div>
+  <!--Contactenos-->
+  <div class="row justify-content-center" id="contactenos">
+    <div class="col-12 col-md-5 align-self-center">
+      <form>
+        <div class="row">
+          <div class="col-12 col-md-6">
             <div class="input-group mb-3">
               <span class="input-group-text" id="basic-addon1">
-                <i class="bi bi-signpost-split"></i>
+                <i class="bi bi-person-circle"></i>
               </span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="direccion"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
-              />
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="Username"
+                aria-describedby="basic-addon1" />
             </div>
-            <button type="button" class="btn btn-secondary">Enviar</button>
           </div>
-        </form>
-      </div>
+          <div class="col-12 col-md-6">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-envelope-paper-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75l-1.5.75ZM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765ZM16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4v.313Zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516L8 10.072Zm-8 3.3 5.693-3.162L0 6.873v6.5Z" />
+                </svg>
+              </span>
+              <input type="text" class="form-control" placeholder="Correo" aria-label="Username"
+                aria-describedby="basic-addon1" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="bi bi-telephone-fill"></i>
+              </span>
+              <input type="text" class="form-control" placeholder="telefono" aria-label="Username"
+                aria-describedby="basic-addon1" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="bi bi-calendar-date-fill"></i>
+              </span>
+              <input type="date" class="form-control" placeholder="fecha" aria-label="Username"
+                aria-describedby="basic-addon1" />
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="bi bi-clock-fill"></i>
+              </span>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>selecione hora</option>
+                <option value="1">1pm - 2pm</option>
+                <option value="2">3pm - 4pm</option>
+                <option value="3">5pm - 6pm</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="bi bi-signpost-split"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="direccion" aria-label="Username"
+              aria-describedby="basic-addon1" />
+          </div>
+          <button type="button" class="btn btn-secondary">Enviar</button>
+        </div>
+      </form>
     </div>
-    <!--fin contactenos-->
+  </div>
+  <!--fin contactenos-->
 
 
-    <div class="floating-icons">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
-    </div>
+  <div class="floating-icons">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+  </div>
 
 
 
-    <script src="./js/script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
