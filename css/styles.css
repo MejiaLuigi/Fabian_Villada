@@ -1,6 +1,8 @@
 #video {
   display: flex;
   justify-content: center;
+  background-color: #0D421F;
+  padding: 40px;
 }
 
 #Pilares {
@@ -13,22 +15,16 @@
   justify-content: center;
 }
 
-h3 {
-  display: flex;
-  justify-content: center;
-}
-
-img {
-  justify-content:baseline;
+h2, p {
+  color: #0D421F;
   align-items: center;
+  text-align: center;
   
 }
 
-.nav-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+h2:hover,p:hover {
+  animation: bounce; 
+  animation-duration: 2s; 
 }
 
 #quien {
@@ -38,10 +34,10 @@ img {
 
 #quien {
   background-image: url("../img/fondo.jpg");
-  padding: 10%;
+  padding: 5%;
   background-size: cover;
   background-position: top center;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   position: relative;
   z-index: 1;
 }
@@ -60,13 +56,7 @@ img {
 nav {
   backdrop-filter: blur(110px);
   text-shadow: #000000;
-  /* background-color:#0D421F; */
-  text-decoration-color: #fcc008;
-}
-
-.nav {
-    color: #fcc008;
-    
+  
 }
 
 .btn {
@@ -78,16 +68,65 @@ nav {
     color: white;
 }
 
-#home-tab-pane, #profile-tab-pane, #contact-tab-pane {
-    text-align: center;
-}
-
-#video {
-    background-color: #0D421F;
-}
 
 .bi {
-  height: 18px;
+  height:18px;
   width: 18px;
   /* color:#dc3545; */
+}
+
+.estudios {
+  display: flex;
+  align-items: center;
+  background-color: #fcc008;
+  color: #0D421F;
+  justify-content: center;
+  padding:40px,40px,0px,40px;
+  margin-top: 40px;
+}
+
+#contact-tab, #home-tab, #profile-tab{
+  color: #0D421F;
+  font-style:initial;
+}
+
+.floating-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.floating-icons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.floating-icons a i {
+  font-size: 20px;
+}
+
+.custom-icon {
+  font-size: 50px; /* Tamaño de la fuente */
+  width: 100px; /* Ancho del icono */
+  height: 100px; /* Alto del icono */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-self: start;
+}
+
+.pilares {
+  padding: 40px;
+}
+
+.votacion {
+  padding: 40px;
 }
