@@ -5,10 +5,7 @@
   padding: 40px;
 }
 
-#Pilares {
-  display: flex;
-  justify-content: space-around;
-}
+
 
 #votacion {
   display: flex;
@@ -35,11 +32,11 @@ h2:hover,p:hover {
 #quien {
   background-image: url("../img/fondo.jpg");
   padding: 5%;
-  background-size: cover;
+  /* background-size: cover; */
   background-position: top center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 #quien::after {
@@ -130,3 +127,4 @@ nav {
 .votacion {
   padding: 40px;
 }
+
