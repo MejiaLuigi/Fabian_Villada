@@ -52,9 +52,6 @@ h2:hover,p:hover {
 }
 nav {
   backdrop-filter: blur(110px);
-  text-shadow: #000000;
- 
-  
 }
 .navbar{
   --bs-navbar-padding-y: ;
@@ -72,6 +69,9 @@ nav {
   font-weight: bold;
 }
 
+#carouselExampleIndicators{
+  margin: 50px 0px 0px 0px ;
+}
 
 
 
@@ -177,7 +177,9 @@ nav {
   padding: 30px;
 }
 
-
+.navbar-dark, .navbar[data-bs-theme=light] {
+  
+}
 
 
 
