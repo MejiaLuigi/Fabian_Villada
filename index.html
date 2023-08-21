@@ -14,8 +14,14 @@
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="plugin/components/Font Awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="plugin/whatsapp-chat-support.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/galeriacartas.css">
 </head>
 
 <body>
@@ -76,7 +82,6 @@
   <!--fin carrusel-->
 
   <!--quien soy-->
-
   <div class="container-fluid " id="quien">
     <div class="row">
       <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-5">
@@ -103,14 +108,10 @@
 
   <!--video-->
   <div id="video">
-    <iframe 
-     width="560" 
-     height="315" 
-     src="https://www.youtube.com/embed/6uBHKojcM-0?si=Ib9RBm4wJ0PPQKCl&autoplay=1"
-     title="YouTube video player" 
-     frameborder="0"
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-     allowfullscreen>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6uBHKojcM-0?si=Ib9RBm4wJ0PPQKCl&autoplay=1"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
     </iframe>
 
   </div>
@@ -141,7 +142,9 @@
   <div class="container-fluid estudios">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-        <div class="row-md-12"><i class="bi bi-person-vcard-fill custom-icon "></i></div>
+        <div class="row-md-12">
+          <i class="bi bi-person-vcard-fill custom-icon "></i>
+        </div>
         <div class="row-md-12">
           <h2>Mi Trayectoria</h2>
         </div>
@@ -192,11 +195,10 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"><img src="./img/f1.png" alt=""></div>
-
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <img src="./img/f1.png" alt="">
+      </div>
     </div>
-    </h3>
-  </div>
   </div>
   <!--fin estudios-->
 
@@ -252,7 +254,7 @@
 
   <!--Contactenos-->
   <div class="row justify-content-center" id="contactenos">
-    <div class="col-12 col-md-5 align-self-center">
+    <div class="col-12 col-md-6 ">
       <form class="needs-validation" novalidate>
         <div class="row">
           <div class="col-12 col-md-6">
@@ -260,14 +262,18 @@
               <span class="input-group-text" id="basic-addon1">
                 <i class="bi bi-person-circle"></i>
               </span>
-              <input type="text" for="validationCustom01" class="form-control" placeholder="Nombre" aria-label="Username"
-                aria-describedby="basic-addon1" id="validationCustom01"  required>
-                <div class="valid-feedback">
-                  Looks good!
-                  </div>
+              <input type="text" for="validationCustom01" class="form-control" placeholder="Nombre"
+                aria-label="Username" aria-describedby="basic-addon1" id="validationCustom01" required>
+              <div class="valid-tooltip">
+                Esta Bien!
+              </div>
+              <div class="invalid-tooltip">
+                Ingrese su Nombre
+              </div>
             </div>
-        
-            
+
+
+
           </div>
           <div class="col-12 col-md-6">
             <div class="input-group mb-3">
@@ -278,10 +284,19 @@
                     d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75l-1.5.75ZM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765ZM16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4v.313Zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516L8 10.072Zm-8 3.3 5.693-3.162L0 6.873v6.5Z" />
                 </svg>
               </span>
-              <input type="text" class="form-control" placeholder="Correo" aria-label="Username"
-                aria-describedby="basic-addon1" />
+              <input type="text" for="validationCustom02" class="form-control" placeholder="Correo"
+                aria-label="Username" aria-describedby="basic-addon1" id="validationCustom02" required />
+              <div class="valid-tooltip">
+                Esta Bien!
+              </div>
+              <div class="invalid-tooltip">
+                Ingrese su Correo
+              </div>
+
             </div>
+
           </div>
+
         </div>
         <div class="row">
           <div class="col-12">
@@ -290,149 +305,141 @@
                 <i class="bi bi-telephone-fill"></i>
               </span>
               <input type="text" class="form-control" placeholder="telefono" aria-label="Username"
-                aria-describedby="basic-addon1" />
+                aria-describedby="basic-addon1" required />
+              <div class="valid-tooltip">
+                Esta Bien!
+              </div>
+              <div class="invalid-tooltip">
+                Ingrese su Numero de Telefono
+              </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">
-                <i class="bi bi-calendar-date-fill"></i>
-              </span>
-              <input type="date" class="form-control" placeholder="fecha" aria-label="Username"
-                aria-describedby="basic-addon1" />
-            </div>
+          <div class="col-12">
+            <textarea class="form-control"  cols="10" rows="6"></textarea>
+            <button type="submit" class="btn btn-primary">Enviar</button>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">
-                <i class="bi bi-clock-fill"></i>
-              </span>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>selecione hora</option>
-                <option value="1">1pm - 2pm</option>
-                <option value="2">3pm - 4pm</option>
-                <option value="3">5pm - 6pm</option>
-              </select>
-            </div>
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">
-              <i class="bi bi-signpost-split"></i>
-            </span>
-            <input type="text" class="form-control" placeholder="direccion" aria-label="Username"
-              aria-describedby="basic-addon1" />
-          </div>
-          <button type="submit" class="btn btn-secondary">Enviar</button>
         </div>
       </form>
+    </div>
+    <div class="col-8 col-md-2">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/gv1.JPG" alt="" width="100%"></div>
+          <div class="swiper-slide"><img src="./img/gv2.jpeg" alt="" width="100%"></div>
+          <div class="swiper-slide"><img src="./img/gv3.jpg" alt="" width="100%"></div>
+          <div class="swiper-slide"><img src="./img/gv4.jpg" alt="" width="100%"></div>
+          <div class="swiper-slide"><img src="./img/gv5.jpg" alt="" width="100%"></div>
+        </div>
+      </div>
     </div>
   </div>
   <!--fin contactenos-->
 
   <!--------galeria------------->
-  <div class="container mt-3">
+  <div class="container mt-4" id="galeria">
     <div class="row responsive">
-    
-    <div class="col-lg-4">
-      <div class="card">
-        <img class="card-img-top" src="./img/g5.jpeg" alt="Card image" style="width:100%">
-      </div>
-     </div>
-     
-     <div class="col-lg-4">
-      <div class="card">
-        <img class="card-img-top" src="./img/g4.jpeg" alt="Card image" style="width:100%">
-      </div>
-     </div>
-     
-     
-     <div class="col-lg-4">
-      <div class="card">
-        <img class="card-img-top" src="./img/g3.JPG" alt="Card image" style="width:100%">
-      </div>
-     </div>
-     
+
       <div class="col-lg-4">
-      <div class="card">
-        <img class="card-img-top" src="./img/g2.JPG" alt="Card image" style="width:100%">
+        <div class="card">
+          <img class="card-img-top" src="./img/g1.JPG" alt="Card image" style="width:100%">
+        </div>
       </div>
-     </div>
-     
-     
-      <div class="col-lg-4">
-      <div class="card">
-        <img class="card-img-top" src="./img/g1.JPG" alt="Card image" style="width:100%">
+
+      <div class="col-lg-3">
+        <div class="card ">
+          <img class="card-img-top" src="./img/g2.JPG" alt="Card image" style="width:100%">
+        </div>
       </div>
-     </div>
-      
-     </div>
+
+      <div class="col-lg-3">
+        <div class="card">
+          <img class="card-img-top " src="./img/g3.jpeg" alt="Card image" style="width: 100%;">
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="./img/g4.jpg" alt="Card image" style="width:100%">
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card">
+          <img class="card-img-top " src="./img/g5.jpeg" alt="Card image" style="width:100%">
+        </div>
+      </div>
+
     </div>
+  </div>
   <!-------fin galeria--------->
 
-
-<!---iconos redes sociales-->
+  <!---iconos redes sociales-->
   <div class="floating-icons">
     <a href="https://www.facebook.com/FabianVilladaConcejal?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
-    <a href="https://instagram.com/fabianvilladaconcejal?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa fa-instagram"></i></a>
+    <a href="https://instagram.com/fabianvilladaconcejal?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i
+        class="fa fa-instagram"></i></a>
   </div>
-<!---fin iconos redes sociales-->
+  <!---fin iconos redes sociales-->
 
-<!--whatsaap -->
-<div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
-  <div class="wcs_button_label">
-          Contáctanos
-      </div>  
-  <div class="wcs_button wcs_button_circle">
+  <!--whatsaap -->
+  <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+    <div class="wcs_button_label">
+      Contáctanos
+    </div>
+    <div class="wcs_button wcs_button_circle">
       <span class="fa fa-whatsapp"></span>
-  </div>  
+    </div>
 
-  <div class="wcs_popup">
+    <div class="wcs_popup">
       <div class="wcs_popup_close">
-          <span class="fa fa-close"></span>
+        <span class="fa fa-close"></span>
       </div>
       <div class="wcs_popup_header">
-          <span class="fa fa-whatsapp"></span>
-          <strong>Conoce Mi Programa</strong>
-          
-          <div class="wcs_popup_header_description">¿Tienes alguna Duda? Chatea con nosotros en Whatsapp</div>
+        <span class="fa fa-whatsapp"></span>
+        <strong>Conoce Mi Programa</strong>
 
-      </div>  
-      <div class="wcs_popup_input" 
-          data-number="+573134191005"
-          data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:7030-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"09:00-18:30", "sunday":"09:00-22:30" }'>
-          <input type="text" placeholder="Escribir pregunta!" />
-          <i class="fa fa-play"></i>
+        <div class="wcs_popup_header_description">¿Tienes alguna Duda? Chatea con nosotros en Whatsapp</div>
+
+      </div>
+      <div class="wcs_popup_input" data-number="+573134191005"
+        data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:7030-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"09:00-18:30", "sunday":"09:00-22:30" }'>
+        <input type="text" placeholder="Escribir pregunta!" />
+        <i class="fa fa-play"></i>
       </div>
       <div class="wcs_popup_avatar">
-          <img src="./img/wi.png" alt="">
+        <img src="./img/wi.png" alt="">
       </div>
+    </div>
   </div>
-</div>
 
   <!-- jQuery 1.8+ -->
-<script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+  <script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
   <!-- Plugin JS file -->
-<script src="plugin/components/moment/moment.min.js"></script>
-<script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
-<script src="plugin/whatsapp-chat-support.js"></script>
-<script>
- $('#button-w').whatsappChatSupport({
-      defaultMsg : '',
-  });
-</script>
-<!--fin whatsapp-->
+  <script src="plugin/components/moment/moment.min.js"></script>
+  <script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+  <script src="plugin/whatsapp-chat-support.js"></script>
+  <script>
+    $('#button-w').whatsappChatSupport({
+      defaultMsg: '',
+    });
+  </script>
+  <!--fin whatsapp-->
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+    integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
-<script src="./js/galeria.js"></script>
+  <script src="./js/galeria.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./js/galeriacartas.js"></script>
 </body>
 
 </html>

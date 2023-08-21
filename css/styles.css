@@ -177,6 +177,14 @@ nav {
 }
 /*------------------fin secion mi trayectoria acordeon-----------------------------*/
 
+.card-img-top{
+  width: 90%;
+  height: 200px;
+}
+
+#contactenos{
+  background-color: #0D421F;
+}
 
 
 
