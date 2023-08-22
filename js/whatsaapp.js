@@ -1,0 +1,3 @@
+$('#button-w').whatsappChatSupport({
+    defaultMsg: '',
+  });
