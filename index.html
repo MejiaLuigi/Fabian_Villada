@@ -412,7 +412,7 @@
 
       </div>
       <div class="wcs_popup_input" data-number="+573134191005"
-        data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:7030-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"09:00-18:30", "sunday":"09:00-22:30" }'>
+        data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:00-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"09:00-18:30", "sunday":"09:00-22:30" }'>
         <input type="text" placeholder="Escribir pregunta!" />
         <i class="fa fa-play"></i>
       </div>
@@ -428,6 +428,9 @@
   <script src="plugin/components/moment/moment.min.js"></script>
   <script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
   <script src="plugin/whatsapp-chat-support.js"></script>
+  <script>$('#button-w').whatsappChatSupport({
+    defaultMsg: '',
+  });</script>
   <!--fin whatsapp-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,56 +1,3 @@
-#video {
-  display: flex;
-  justify-content: center;
-  background-color: #0D421F;
-  padding: 40px;
-}
-
-
-
-#votacion {
-  display: flex;
-  justify-content: center;
-}
-
-h2, p {
-  color: #0D421F;
-  align-items: center;
-  text-align: center;
-  
-}
-
-h2:hover,p:hover {
-  animation: bounce; 
-  animation-duration: 2s; 
-}
-
-#quien {
-  display: flex;
-  align-items: center;
-}
-
-#quien {
-  background-image: url("../img/fondo.jpg");
-  padding: 5%;
-  background-size: cover;
-  background-position: top center;
-  background-attachment: fixed;
-  position: relative;
-  z-index: 0;
-}
-
-#quien::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fcc008;
-  opacity: 0.8;
-  z-index: -1;
-}
-
 /* ------------------------------------nav --------------------------------------*/
 nav {
   backdrop-filter: blur(110px);
@@ -71,6 +18,63 @@ nav {
 }
 /*--------------------------------fin nav------------------------------------------*/
 
+/* -----------------------secion quien soy --------------------------------------- */
+#quien {
+  display: flex;
+  align-items: center;
+  background-image: url("../img/fondo.jpg");
+  padding: 5%;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+#quien::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fcc008;
+  opacity: 0.8;
+  z-index: -1;
+}
+/* ---------------------fin seccion quien soy-------------------------------------- */
+
+
+
+/* ----------------------secion video----------------------------------------------- */
+#video {
+  display: flex;
+  justify-content: center;
+  background-color: #0D421F;
+  padding: 40px;
+}
+/* -------------------fin secion video -------------------------------------------- */
+
+#votacion {
+  display: flex;
+  justify-content: center;
+}
+
+h2, p {
+  color: #0D421F;
+  align-items: center;
+  text-align: center;
+  
+}
+
+h2:hover,p:hover {
+  animation: bounce; 
+  animation-duration: 2s; 
+}
+
+
+
+
+
 #carouselExampleIndicators{
   margin: 50px 0px 0px 0px ;
 }
@@ -81,7 +85,7 @@ nav {
 }
 .btn:hover {
     background-color: #0D421F;
-    color: white;
+    color:#fcc008;
 }
 .btn-primary {
   --bs-btn-color: #0D421F;
