@@ -196,14 +196,15 @@ h2:hover,p:hover {
   background-color: #0D421F;
 }
 
-.pie-pagina .grupo-1{
 
 
-
-
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 .pie-pagina .grupo-1 .box figure img{
   width: 250px;
@@ -254,12 +255,6 @@ h2:hover,p:hover {
 
 .pie-pagina .grupo-2 a:hover{
   color: #fcc008;
-}
-
-.direccion {
-  justify-content: center;
-  align-items: center ;
-  align-content: center;
 }
 
 /* FIN FOOTER */
