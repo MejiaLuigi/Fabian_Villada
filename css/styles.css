@@ -256,6 +256,12 @@ h2:hover,p:hover {
   color: #fcc008;
 }
 
+.direccion {
+  justify-content: center;
+  align-items: center ;
+  align-content: center;
+}
+
 /* FIN FOOTER */
 
 
