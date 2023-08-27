@@ -173,4 +173,10 @@ body{
     color: #fcc008;
 }
 
+@media (max-width: 768px) {
+  .pie-pagina{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 /* FIN FOOTER */
