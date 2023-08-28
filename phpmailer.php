@@ -18,48 +18,24 @@ $telefono = $_POST['telefono'];
 
 // Validación del nombre
 if (preg_match('/[^\p{L}\s]+/u', $nombre)) {
-    echo <script>
-    Swal.fire({
-        icon: 'error',
-        title: 'Error!',
-        text: 'El campo de nombre no puede contener caracteres especiales.'
-    });
-</script>;
+    echo "El campo de nombre no puede contener caracteres especiales.";
     exit;
 }
 
 if (preg_match('/[=¡!@#$%^&*()\-_+|<>?]/', $mensaje)) {
-    echo <script>
-    Swal.fire({
-        icon: 'error',
-        title: 'Error!',
-        text: 'El campo de texto no puede contener caracteres especiales.'
-    });
-</script>;
+    echo "El campo de texto no debe contener caracteres especiales.";
     exit;
 }
 
 // Validación del email
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo <script>
-    Swal.fire({
-        icon: 'error',
-        title: 'Error!',
-        text: 'El campo de email debe ser una dirección de correo electrónico válida.'
-    });
-</script>;
+    echo "El campo de email debe ser una dirección de correo electrónico válida.";
     exit;
 }
 
 // Validación del teléfono
 if (preg_match('/[^0-9]+/', $telefono)) {
-    echo <script>
-    Swal.fire({
-        icon: 'error',
-        title: 'Error!',
-        text: 'El campo de teléfono solo puede contener números.'
-    });
-</script>;
+    echo "El campo de teléfono solo puede contener números.";
     exit;
 }
 
@@ -86,25 +62,10 @@ $mailer->CharSet = 'UTF-8';
 $rta = $mailer->send( );
 
 if (!$mailer->send()) {
-    echo <script>
-    Swal.fire({
-        icon: 'error',
-        title: 'Error!',
-        text: 'Error al enviar el correo electrónico. Por favor, inténtalo de nuevo más tarde.'
-    }).then(() => {
-        window.location.href = 'index.html';
-    });
-    </script>;
-} else {
-    echo <script>
-    Swal.fire({
-        icon: 'success',
-        title: 'Éxito',
-        text: 'El mensaje se envió correctamente.'
-    }).then(() => {
-        window.location.href = 'index.html';
-    });
-    </script>;
+    echo "Error al enviar el correo electrónico. Por favor, inténtalo de nuevo más tarde.";
     exit;
 }
+//var_dump($rta);
+header("Location: index.html" );
+exit;
 ?>
