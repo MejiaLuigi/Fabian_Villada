@@ -13,7 +13,6 @@ if( ! isset( $_POST['nombre'] ) ){
 $nombre = $_POST['nombre'];
 $telefono = $_POST['telefono']
 $email = $_POST['email'];
-
 $mensaje = $_POST['mensaje'];
 
 if( empty(trim($nombre)) ) $nombre = 'nombre';
@@ -33,7 +32,7 @@ HTML;
 
 $headers = "MIME-Version: 1.0 \r\n";
 $headers.= "Content-type: text/html; charset=utf-8 \r\n";
-$headers.= "From: $nombre $apellido <$email> \r\n";
+$headers.= "From: $nombre $telefono <$email> \r\n";
 $headers.= "To: Sitio web <info@fabianvillada.com> \r\n";
 // $headers.= "Cc: copia@email.com \r\n";
 // $headers.= "Bcc: copia-oculta@email.com \r\n";
