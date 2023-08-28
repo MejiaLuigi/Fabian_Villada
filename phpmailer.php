@@ -27,11 +27,7 @@ if (preg_match('/[=¡!@#$%^&*()\-_+|<>?]/', $mensaje)) {
     exit;
 }
 
-// Validación del email
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "El campo de email debe ser una dirección de correo electrónico válida.";
-    exit;
-}
+
 
 // Validación del teléfono
 if (preg_match('/[^0-9]+/', $telefono)) {
