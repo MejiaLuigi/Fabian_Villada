@@ -22,6 +22,11 @@ if (preg_match('/[^\p{L}\s]+/u', $nombre)) {
     exit;
 }
 
+if (preg_match('/[=¡!@#$%^&*()\-_+|<>?]/', $mensaje)) {
+    echo "El campo de texto no debe contener caracteres especiales.";
+    exit;
+}
+
 // Validación del email
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo "El campo de email debe ser una dirección de correo electrónico válida.";
