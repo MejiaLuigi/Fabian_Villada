@@ -13,10 +13,10 @@ $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];
 $telefono = $_POST['telefono']; 
 
-if( empty(trim($nombre)) ) $nombre = '';
-if( empty(trim($email)) ) $email = '';
-if( empty(trim($telefono)) ) $telefono = '';
-if( empty(trim($mensaje)) ) $mensaje = '';
+if( empty(trim($nombre)) ) $nombre = $nombre;
+if( empty(trim($email)) ) $email = $email;
+if( empty(trim($telefono)) ) $telefono = $telefono;
+if( empty(trim($mensaje)) ) $mensaje = $mensaje;
 
 $body = <<<HTML
     <h1>Contacto desde la web</h1>
