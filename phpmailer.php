@@ -9,13 +9,14 @@ require 'phpmailer/Exception.php';
 use PHPMailer\PHPMailer\PHPMailer;
 
 $nombre = $_POST['nombre'];
-
 $email = $_POST['email'];
-$asunto = $_POST['asunto'];
 $mensaje = $_POST['mensaje'];
 $telefono = $_POST['telefono']; 
 
-
+if( empty(trim($nombre)) ) $nombre = '';
+if( empty(trim($email)) ) $email = '';
+if( empty(trim($telefono)) ) $telefono = '';
+if( empty(trim($mensaje)) ) $mensaje = '';
 
 $body = <<<HTML
     <h1>Contacto desde la web</h1>
