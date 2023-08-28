@@ -18,24 +18,48 @@ $telefono = $_POST['telefono'];
 
 // Validación del nombre
 if (preg_match('/[^\p{L}\s]+/u', $nombre)) {
-    echo "El campo de nombre no puede contener caracteres especiales.";
+    echo "<script>
+    Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: 'El campo de nombre no puede contener caracteres especiales.'
+    });
+</script>";
     exit;
 }
 
 if (preg_match('/[=¡!@#$%^&*()\-_+|<>?]/', $mensaje)) {
-    echo "El campo de texto no debe contener caracteres especiales.";
+    echo "<script>
+    Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: 'El campo de texto no puede contener caracteres especiales.'
+    });
+</script>";
     exit;
 }
 
 // Validación del email
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "El campo de email debe ser una dirección de correo electrónico válida.";
+    echo "<script>
+    Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: 'El campo de email debe ser una dirección de correo electrónico válida.'
+    });
+</script>";
     exit;
 }
 
 // Validación del teléfono
 if (preg_match('/[^0-9]+/', $telefono)) {
-    echo "El campo de teléfono solo puede contener números.";
+    echo "<script>
+    Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: 'El campo de teléfono solo puede contener números.'
+    });
+</script>";
     exit;
 }
 
@@ -62,10 +86,25 @@ $mailer->CharSet = 'UTF-8';
 $rta = $mailer->send( );
 
 if (!$mailer->send()) {
-    echo "Error al enviar el correo electrónico. Por favor, inténtalo de nuevo más tarde.";
+    echo "<script>
+    Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: 'Error al enviar el correo electrónico. Por favor, inténtalo de nuevo más tarde.'
+    }).then(() => {
+        window.location.href = 'index.html';
+    });
+    </script>";
+} else {
+    echo "<script>
+    Swal.fire({
+        icon: 'success',
+        title: 'Éxito',
+        text: 'El mensaje se envió correctamente.'
+    }).then(() => {
+        window.location.href = 'index.html';
+    });
+    </script>";
     exit;
 }
-//var_dump($rta);
-header("Location: index.html" );
-exit;
 ?>
