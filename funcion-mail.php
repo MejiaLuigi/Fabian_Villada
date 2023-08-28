@@ -11,17 +11,19 @@ if( ! isset( $_POST['nombre'] ) ){
 
 
 $nombre = $_POST['nombre'];
-
+$telefono = $_POST['telefono']
 $email = $_POST['email'];
 
 $mensaje = $_POST['mensaje'];
 
-if( empty(trim($nombre)) ) $nombre = 'anonimo';
-if( empty(trim($apellido)) ) $apellido = '';
-
+if( empty(trim($nombre)) ) $nombre = 'nombre';
+if( empty(trim($email)) ) $email = 'email';
+if( empty(trim($telefono)) ) $telefono = 'telefono';
+if( empty(trim($mensaje)) ) $mensaje = 'mensaje';
 $body = <<<HTML
     <h1>Contacto desde la web</h1>
     <p>De: $nombre  / $email</p>
+    <p>telefono: $telefono</p>
     <h2>Mensaje</h2>
     $mensaje
 HTML;
