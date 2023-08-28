@@ -23,7 +23,7 @@ if (preg_match('/[^\p{L}\s]+/u', $nombre)) {
 }
 
 // Validación del email
-if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo "El campo de email debe ser una dirección de correo electrónico válida.";
     exit;
 }
